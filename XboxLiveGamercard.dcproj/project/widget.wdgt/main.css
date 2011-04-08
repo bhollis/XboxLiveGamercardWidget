@@ -98,7 +98,7 @@ body {
     width: 200px;
     top: 12px;
     left: 12px;
-    opacity: 0.02;
+    opacity: 0;
 }
 
 #getmore {
@@ -172,6 +172,10 @@ body {
     bottom: 56px;
     height: auto;
     -khtml-user-select: none;
+}
+
+#benhollislink:hover {
+    color: rgb(104, 202, 255);
 }
 
 .selected #benhollislink {
