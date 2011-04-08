@@ -6,6 +6,7 @@
  */
 var localizedStrings = {
     "Done": "Done",
+    "GamertagLabel": "Gamertag:",
     "getMoreWidgets": "Get more Dashboard widgets at "
 };
 

@@ -136,5 +136,5 @@ if (window.widget) {
 
 function goToUrl(event)
 {
-    widget.upenURL("http://benhollis.net/software/dashboard/");
+    widget.openURL("http://benhollis.net/software/dashboard/");
 }

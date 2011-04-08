@@ -8,7 +8,7 @@ var dashcodePartSpecs = {
     "benhollislink": { "text": "benhollis.net", "view": "DC.Text" },
     "clickblocker": { "creationFunction": "CreateShape" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
-    "gamertaglabel": { "text": "Gamertag:", "view": "DC.Text" },
+    "gamertaglabel": { "text": "GamertagLabel", "view": "DC.Text" },
     "getmore": { "text": "getMoreWidgets", "view": "DC.Text" },
     "infobutton": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "rectangleShape1": { "creationFunction": "CreateShape", "noBackground": true }

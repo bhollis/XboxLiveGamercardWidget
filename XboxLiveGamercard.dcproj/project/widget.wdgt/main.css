@@ -62,9 +62,9 @@ body {
     color: black;
     font-family: HelveticaNeue;
     font-size: 10pt;
+    width: 176px;
     left: 23px;
-    top: 43px;
-    width: 174px;
+    top: 37px;
 }
 
 #gamertaglabel {
@@ -75,12 +75,14 @@ body {
     left: 23px;
     color: rgb(255, 255, 255);
     font-family: 'Helvetica Neue';
-    top: 28px;
+    font-size: 12px;
+    top: 22px;
     right: 140px;
     width: auto;
-    bottom: 116px;
+    bottom: 122px;
     height: auto;
-    font-size: 12px;
+    cursor: default;
+    -khtml-user-select: none;
 }
 
 .selected #gamertaglabel {
@@ -109,11 +111,13 @@ body {
     text-align: center;
     left: 21px;
     font-size: 12px;
-    top: 77px;
+    top: 71px;
     right: 21px;
     width: auto;
-    bottom: 64px;
+    bottom: 70px;
     height: auto;
+    cursor: default;
+    -khtml-user-select: none;
 }
 
 .selected #getmore {
@@ -157,16 +161,17 @@ body {
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    color: rgb(23, 161, 255);
-    cursor: pointer;
+    cursor: pointer !important;
     font-family: 'Helvetica Neue';
     font-size: 16px;
     left: 66px;
-    top: 92px;
+    color: rgb(0, 163, 255);
+    top: 85px;
     right: 66px;
     width: auto;
-    bottom: 49px;
+    bottom: 56px;
     height: auto;
+    -khtml-user-select: none;
 }
 
 .selected #benhollislink {
