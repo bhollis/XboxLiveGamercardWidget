@@ -11,6 +11,23 @@
 function load()
 {
     dashcode.setupParts();
+    
+	var gamertag = widget.preferenceForKey("gamertag");
+	if(!gamertag || gamertag == "")
+		gamertag = "Major Nelson";
+	
+	window.gamertag = gamertag;
+	var gamercard = document.getElementById("gamercard");
+	gamercard.src = "http://gamercard.xbox.com/" + window.gamertag + ".card";
+    var gamertagInput = document.getElementById("gamertagInput");
+    gamertagInput.value = gamertag;
+}
+
+function update() {
+	// Refresh
+	var gamercard = document.getElementById("gamercard");
+	gamercard.src = "http://gamercard.xbox.com/" + window.gamertag + ".card";
+	setTimeout("update()", 30 * 60 * 1000); // 30 mins
 }
 
 //
