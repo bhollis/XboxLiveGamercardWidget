@@ -5,12 +5,13 @@
  code generator otherwise the changes will be lost.
  */
 var dashcodePartSpecs = {
+    "benhollislink": { "text": "benhollis.net", "view": "DC.Text" },
     "clickblocker": { "creationFunction": "CreateShape" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
+    "gamertaglabel": { "text": "Gamertag:", "view": "DC.Text" },
+    "getmore": { "text": "getMoreWidgets", "view": "DC.Text" },
     "infobutton": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
-    "rectangleShape1": { "creationFunction": "CreateShape", "noBackground": true },
-    "text": { "text": "Gamertag:", "view": "DC.Text" },
-    "text1": { "text": "getMoreWidgets", "view": "DC.Text" },
-    "text2": { "text": "benhollis.net", "view": "DC.Text" }
+    "rectangleShape1": { "creationFunction": "CreateShape", "noBackground": true }
 };
+
 

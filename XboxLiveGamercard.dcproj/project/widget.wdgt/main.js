@@ -12,7 +12,7 @@ function load()
 {
     dashcode.setupParts();
     
-	var gamertag = widget.preferenceForKey("gamertag");
+	var gamertag = widget.preferenceForKey(dashcode.createInstancePreferenceKey("gamertag"));
 	if(!gamertag || gamertag == "")
 		gamertag = "Major Nelson";
 	
@@ -21,13 +21,20 @@ function load()
 	gamercard.src = "http://gamercard.xbox.com/" + window.gamertag + ".card";
     var gamertagInput = document.getElementById("gamertagInput");
     gamertagInput.value = gamertag;
+    
+    gamertagInput.onkeypress = function(e) {
+        if (e.which == 13) {
+            showFront();
+        }
+    }
 }
 
 function update() {
 	// Refresh
+    clearTimeout(window.updateTimer);
 	var gamercard = document.getElementById("gamercard");
 	gamercard.src = "http://gamercard.xbox.com/" + window.gamertag + ".card";
-	setTimeout("update()", 30 * 60 * 1000); // 30 mins
+	window.updateTimer = setTimeout("update()", 30 * 60 * 1000); // 30 mins
 }
 
 //
@@ -36,9 +43,8 @@ function update() {
 //
 function remove()
 {
-    // Stop any timers to prevent CPU usage
-    // Remove any preferences as needed
-    // widget.setPreferenceForKey(null, dashcode.createInstancePreferenceKey("your-key"));
+    clearTimeout(window.updateTimer);
+    widget.setPreferenceForKey(null, dashcode.createInstancePreferenceKey("gamertag"));
 }
 
 //
@@ -46,8 +52,8 @@ function remove()
 // Called when the widget has been hidden
 //
 function hide()
-{
-    // Stop any timers to prevent CPU usage
+{   
+    clearTimeout(window.updateTimer);
 }
 
 //
@@ -56,7 +62,7 @@ function hide()
 //
 function show()
 {
-    // Restart any timers that were stopped on hide
+    update();
 }
 
 //
@@ -67,10 +73,8 @@ function sync()
 {
     // Retrieve any preference values that you need to be synchronized here
     // Use this for an instance key's value:
-    // instancePreferenceValue = widget.preferenceForKey(null, dashcode.createInstancePreferenceKey("your-key"));
-    //
-    // Or this for global key's value:
-    // globalPreferenceValue = widget.preferenceForKey(null, "your-key");
+    window.gamertag = widget.preferenceForKey(dashcode.createInstancePreferenceKey("gamertag"));
+    update();
 }
 
 //
@@ -104,6 +108,9 @@ function showBack(event)
 //
 function showFront(event)
 {
+    window.gamertag = document.getElementById("gamertagInput").value;
+    update();
+
     var front = document.getElementById("front");
     var back = document.getElementById("back");
 
@@ -124,4 +131,10 @@ if (window.widget) {
     widget.onhide = hide;
     widget.onshow = show;
     widget.onsync = sync;
+}
+
+
+function goToUrl(event)
+{
+    widget.upenURL("http://benhollis.net/software/dashboard/");
 }

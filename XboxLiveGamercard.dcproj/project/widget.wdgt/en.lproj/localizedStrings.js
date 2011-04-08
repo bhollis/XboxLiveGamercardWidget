@@ -6,7 +6,7 @@
  */
 var localizedStrings = {
     "Done": "Done",
-    "getMoreWidgets": "Get more Dashboard widgets at ",
-    "Hello, World!": "Hello, World!"
+    "getMoreWidgets": "Get more Dashboard widgets at "
 };
+
 
