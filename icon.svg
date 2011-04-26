@@ -15,11 +15,12 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.0 r9654"
-   sodipodi:docname="icon.png"
+   sodipodi:docname="icon.svg"
    inkscape:export-filename="/Users/brh/Documents/dashboard/XboxLiveGamercard/icon.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
-   style="enable-background:new">
+   style="enable-background:new"
+   enable-background="new">
   <defs
      id="defs4">
     <linearGradient
@@ -192,10 +193,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4.9562508"
-     inkscape:cx="43.357605"
+     inkscape:cx="-7.8908104"
      inkscape:cy="33.912223"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer5"
      showgrid="false"
      inkscape:window-width="1290"
      inkscape:window-height="831"
@@ -210,7 +211,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -218,7 +219,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="shadow"
-     style="display:inline"
+     style="display:inline;opacity:0.50000000000000000;"
      transform="translate(0,5)">
     <rect
        ry="12.16"
@@ -227,7 +228,7 @@
        height="75"
        width="75"
        id="rect4066"
-       style="opacity:0.5;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline;filter:url(#filter4068-4)" />
+       style="opacity:0.50000000000000000;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline;filter:url(#filter4068-4)" />
   </g>
   <g
      inkscape:label="Layer 1"
