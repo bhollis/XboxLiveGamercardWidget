@@ -26,12 +26,14 @@
 		<string>localhost.default</string>
 		<key>Path</key>
 		<string>XboxLiveGamercard</string>
+		<key>Save</key>
+		<true/>
 		<key>SavePath</key>
 		<string>/Users/brh/Documents/dashboard/XboxLiveGamercard</string>
 		<key>WidgetCompatibilityTag</key>
 		<integer>0</integer>
 		<key>WidgetDeployName</key>
-		<string>Xbox Live Gamercard</string>
+		<string>Xbox Card</string>
 		<key>enableSimulation</key>
 		<true/>
 		<key>simulatedHost</key>
